@@ -6,7 +6,7 @@
 		<style>
 			body {
 				font-family: 'Source Sans Pro';
-				padding: 20px 40px 50px 40px;
+				padding: 10px 50px 50px 50px;
 			}
 
 			table {
@@ -26,6 +26,15 @@
 				color: #000;
 			}
 
+			td:nth-child(2) {
+				min-width: 400px;
+			}
+
+			td:nth-child(3) {
+				max-width: 200px;
+				font-size: 14px;
+			}
+
 			li {
 				margin: 5px 0px;
 			}
@@ -41,7 +50,7 @@
 				<td>Nutrimatic</td>
 				<td>
 					Generate words based on possible letter permutations
-					<br /><i> e.g. search "[abcdef]at" to generate cat, bat, eat, fat
+					<br /><i> e.g. search "[abcdef]at" to generate cat, bat, eat, fat; use A for missing letters
 				</td>
 				<td>
 					<a href="https://nutrimatic.org/" target="_blank">https://nutrimatic.org/</a>
@@ -76,10 +85,11 @@
 			<tr>
 				<td>Anagram Solver</td>
 				<td>
-					Generate anagrams
+					Generate anagrams (use ? for blank letters)
 				</td>
 				<td>
-					<a href="http://wordsmith.org/anagram/" target="_blank">http://wordsmith.org/anagram/</a>
+					<a href="https://www.wordplays.com/anagram-solver/" target="_blank">https://www.wordplays.com/anagram-solver/</a>
+					<br /><a href="https://anagram-solver.net/" target="_blank">https://anagram-solver.net/</a> (larger dictionary)
 				</td>
 			</tr>
 			<tr>
@@ -90,6 +100,7 @@
 				</td>
 				<td>
 					<a href="http://www.npinsker.me/puzzles/monkey/" target="_blank">http://www.npinsker.me/puzzles/monkey/</a>
+					<a href="http://puzzledpint.com/files/2415/7835/9513/CodeSheet-201912.pdf" target="_blank">http://puzzledpint.com/files/2415/7835/9513/CodeSheet-201912.pdf</a> (manual reference)
 				</td>
 			</tr>
 			<tr>
@@ -116,18 +127,24 @@
 			<li>Look for hints in the puzzle's title and flavor text
 			<li>Identify where images within the puzzle are from
 			<li>Look for hidden structures or patterns in the puzzle (e.g. bolded words, highlighted areas)
-			<li>Extraction Strategies
+			<li>Extraction strategies:
 				<ul>
-					<li>First letters
+					<li>Take the first letters
 					<li>Index into words
-					<li>Alphabetize
+					<li>Alphabetize the words
+					<li>Sort by word length
 					<li>Find anagrams
-					<li>Diagonalize (first letter of first word, second letter of second word, etc.)
+					<li>Diagonalize (take first letter of first word, second letter of second word, etc.)
 					<li>Look for encodings (e.g. binary, ASCII, Morse, Braille, encode into alphabet)
-					<li>Apply an idea from earlier in the puzzle again
+					<li>Apply an idea from earlier in the puzzle again ("recursion")
 				</ul>
 			</li>
-			<li>More exhaustive tips: <a href="https://beta.vero.site/try" target="_blank">https://beta.vero.site/try</a>, <a href="https://kcaze.github.io/puzzlehunt_resources/pdfs/puzzlehunt_guide.pdf" target="_blank">https://kcaze.github.io/puzzlehunt_resources/pdfs/puzzlehunt_guide.pdf</a>
+			<li>More exhaustive tips:
+				<ul>
+					<li><a href="https://beta.vero.site/try" target="_blank">https://beta.vero.site/try</a>
+					<li><a href="https://kcaze.github.io/puzzlehunt_resources/pdfs/puzzlehunt_guide.pdf" target="_blank">https://kcaze.github.io/puzzlehunt_resources/pdfs/puzzlehunt_guide.pdf</a>
+				</ul>
+			</li>
 		</ul>
 	</body>
 </html>
